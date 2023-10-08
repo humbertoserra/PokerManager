@@ -1,0 +1,15 @@
+bin/
+boss-lock.json
+boss.json
+lib/
+modules/
+src/view/components/button/__history/
+__history/
+src/services/__history/
+src/view/components/button/__history/
+src/view/components/header/__history/
+src/view/components/sidebar/__history/
+src/view/pages/blinds/__history/
+src/view/pages/home/__history/
+src/view/pages/layout/__history/
+ - Copia.gitignore
