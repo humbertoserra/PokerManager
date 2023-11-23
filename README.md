@@ -1,2 +1,3 @@
-# PokerManager
- ERP psara Controle de clubes de Poker
+## PokerManager
+ ERP para Controle de clubes de Poker
+ (em desenvolvimento)
