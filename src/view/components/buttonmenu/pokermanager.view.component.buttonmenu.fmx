@@ -1,0 +1,122 @@
+object ComponentButtonMenu: TComponentButtonMenu
+  Align = Client
+  Size.Width = 240.000000000000000000
+  Size.Height = 40.000000000000000000
+  Size.PlatformDefault = False
+  object lytContainer: TLayout
+    Align = Client
+    Size.Width = 240.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object lytMenu: TLayout
+      Align = Top
+      Size.Width = 240.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object MenuHover: TRectangle
+        Align = Contents
+        Fill.Color = claNull
+        Size.Width = 240.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 5.000000000000000000
+        YRadius = 5.000000000000000000
+      end
+      object lytDescription: TLayout
+        Align = Client
+        Padding.Left = 5.000000000000000000
+        Padding.Right = 5.000000000000000000
+        Size.Width = 180.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object lblDescription: TLabel
+          Align = Client
+          StyledSettings = [Family]
+          Size.Width = 170.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 13.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = xFFC2C7D0
+          Text = 'Titulo Menu'
+          TabOrder = 0
+        end
+      end
+      object lytImageMenu: TLayout
+        Align = Right
+        Padding.Left = 5.000000000000000000
+        Padding.Top = 15.000000000000000000
+        Padding.Right = 5.000000000000000000
+        Padding.Bottom = 15.000000000000000000
+        Position.X = 220.000000000000000000
+        Size.Width = 20.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object ImageMenu: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Align = Client
+          Size.Width = 10.000000000000000000
+          Size.Height = 10.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object lytImageIcon: TLayout
+        Align = Left
+        Padding.Left = 8.000000000000000000
+        Padding.Top = 8.000000000000000000
+        Padding.Right = 8.000000000000000000
+        Padding.Bottom = 8.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object ImageIcon: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Align = Client
+          Size.Width = 24.000000000000000000
+          Size.Height = 24.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object ImageBrand: TCircle
+          Align = Contents
+          Fill.Bitmap.WrapMode = TileStretch
+          Fill.Kind = Bitmap
+          Size.Width = 40.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          Visible = False
+        end
+      end
+      object lytButton: TLayout
+        Align = Contents
+        HitTest = True
+        Size.Width = 240.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        OnResize = lytButtonResize
+        OnClick = lytButtonClick
+        OnMouseEnter = lytButtonMouseEnter
+        OnMouseLeave = lytButtonMouseLeave
+      end
+    end
+    object lytSubmenu: TLayout
+      Align = Client
+      Size.Width = 240.000000000000000000
+      Size.Height = 0.000000000000000000
+      Size.PlatformDefault = False
+      Visible = False
+      TabOrder = 1
+    end
+  end
+end

@@ -1,0 +1,64 @@
+object ComponentSidebar: TComponentSidebar
+  Size.Width = 250.000000000000000000
+  Size.Height = 491.000000000000000000
+  Size.PlatformDefault = False
+  object lytContainer: TLayout
+    Align = Client
+    Padding.Bottom = 5.000000000000000000
+    Size.Width = 250.000000000000000000
+    Size.Height = 491.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object recBackground: TRectangle
+      Align = Contents
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = claBlack
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFF343A40
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.499999970197677600
+      Fill.Gradient.StopPosition.Y = 0.000000000000000000
+      Size.Width = 250.000000000000000000
+      Size.Height = 491.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object lytMenu: TLayout
+      Align = Client
+      Margins.Left = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Size.Width = 240.000000000000000000
+      Size.Height = 425.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+    object lytBrand: TLayout
+      Align = Bottom
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 436.000000000000000000
+      Size.Width = 240.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+    object Line1: TLine
+      Align = Top
+      LineType = Top
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 250.000000000000000000
+      Size.Height = 1.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF606164
+    end
+  end
+end
